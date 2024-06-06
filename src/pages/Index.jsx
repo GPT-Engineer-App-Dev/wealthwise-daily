@@ -1,4 +1,5 @@
 import { Container, Box, Heading, Text, VStack, HStack, Button, Image } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { FaNewspaper, FaChartLine, FaMoneyBillWave } from "react-icons/fa";
 
 const Index = () => {
@@ -26,7 +27,7 @@ const Index = () => {
             <Text mt={2}>Learn about the best investment strategies and tips.</Text>
           </Box>
         </HStack>
-        <Button colorScheme="teal" size="lg">Subscribe Now</Button>
+        <Button as={Link} to="/sample-posts" colorScheme="teal" size="lg">View Sample Posts</Button>
       </VStack>
     </Container>
   );
